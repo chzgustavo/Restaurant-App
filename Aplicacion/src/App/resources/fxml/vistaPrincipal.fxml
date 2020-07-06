@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1119.0" styleClass="anchorPane" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.java.controller.ControllerMain">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="720.0" prefWidth="307.0" styleClass="vbox" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="105.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/jimmy-fallon.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="30.0" top="50.0" />
+                    </VBox.margin></ImageView>
+                <Label alignment="CENTER" prefHeight="16.0" prefWidth="132.0" text="Jimmy Fallon" textFill="#e7e5e5">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="-20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="btnVisiongeneral" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Vision general" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnOrden" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Ordenes" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/orders.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnClientes" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Clientes" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/customers.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnMenus" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Menus" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/menu.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnPaquetes" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Paquetes" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/packages.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnConfiguracion" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onAction="#handleClicks" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Configuracion" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/settings.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+                <JFXButton fx:id="btnSalir" alignment="BASELINE_LEFT" focusTraversable="false" graphicTextGap="22.0" onMouseClicked="#clickSalir" prefHeight="46.0" prefWidth="305.0" stylesheets="@../styles/style.css" text="Salir" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/signOut.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </JFXButton>
+            </children>
+         <stylesheets>
+            <URL value="@../styles/style.css" />
+            <URL value="@../styles/style.css" />
+         </stylesheets>
+        </VBox>
+      <StackPane layoutX="308.0" prefHeight="720.0" prefWidth="811.0">
+         <children>
+            <Pane fx:id="pnlVisionGeneral" prefHeight="720.0" prefWidth="720.0">
+               <children>
+                  <TextField focusTraversable="false" layoutX="537.0" layoutY="11.0" prefHeight="18.0" prefWidth="237.0" promptText="buscar" style="-fx-background-color: #02030A; -fx-border-color: #87c3d7; -fx-border-radius: 2em; -fx-text-fill: #ffffff;" />
+                    <Label layoutX="12.0" text="Restaurant Ordenes" textFill="#e7e5e5">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                    <HBox layoutY="39.0" prefHeight="122.0" prefWidth="720.0" spacing="40.0">
+                        <children>
+                            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                <children>
+                                    <Label text="22000" textFill="#171abd">
+                                        <font>
+                                            <Font name="System Bold" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="16.0" prefWidth="132.0" text="Total Ordenes" textFill="#e7e5e5" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" prefHeight="122.0" prefWidth="114.0">
+                                <children>
+                                    <Label text="1000" textFill="#17b5bd">
+                                        <font>
+                                            <Font name="System Bold" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="16.0" prefWidth="132.0" text="Total Entregadas" textFill="#e7e5e5" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" prefHeight="122.0" prefWidth="159.0">
+                                <children>
+                                    <Label text="1000" textFill="#34cb0c">
+                                        <font>
+                                            <Font name="System Bold" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="16.0" prefWidth="132.0" text="Ordenes Pendientes" textFill="#e7e5e5" />
+                                </children>
+                            </VBox>
+                            <VBox alignment="CENTER" prefHeight="122.0" prefWidth="110.0">
+                                <children>
+                                    <Label text="1000" textFill="#bdb517">
+                                        <font>
+                                            <Font name="System Bold" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="16.0" prefWidth="132.0" text="Ordenes Espera" textFill="#e7e5e5" />
+                                </children>
+                            </VBox>
+                        </children>
+                        <padding>
+                            <Insets left="10.0" />
+                        </padding>
+                  </HBox>
+                    <HBox layoutY="169.0" prefHeight="55.0" prefWidth="774.0" spacing="3.0" styleClass="hbox" stylesheets="@../styles/style.css">
+                        <children>
+                            <Label alignment="BASELINE_LEFT" text="Nombre Compania" textFill="#e7e5e5">
+                                <HBox.margin>
+                                    <Insets left="28.0" top="20.0" />
+                                </HBox.margin>
+                            </Label>
+                            <Label alignment="BASELINE_LEFT" text="Airport" textFill="#e7e5e5">
+                                <HBox.margin>
+                                    <Insets left="75.0" top="20.0" />
+                                </HBox.margin>
+                            </Label>
+                            <Label alignment="BASELINE_LEFT" text="Fecha Entrega" textFill="#e7e5e5">
+                                <HBox.margin>
+                                    <Insets left="75.0" top="20.0" />
+                                </HBox.margin>
+                            </Label>
+                            <Label alignment="BASELINE_LEFT" text="Costo" textFill="#e7e5e5">
+                                <HBox.margin>
+                                    <Insets left="70.0" top="20.0" />
+                                </HBox.margin>
+                            </Label>
+                            <Label alignment="BASELINE_LEFT" text="Estado" textFill="#e7e5e5">
+                                <HBox.margin>
+                                    <Insets left="75.0" top="20.0" />
+                                </HBox.margin>
+                            </Label>
+                        </children>
+                  </HBox>
+                    <ScrollPane fx:id="scrollPane" layoutX="26.0" layoutY="235.0" pannable="true" prefHeight="416.0" prefWidth="748.0" style="-fx-background-insets: 0; -fx-background-color: #02030A;" stylesheets="@../styles/style.css">
+                        <content>
+                            <VBox fx:id="pnItems" prefHeight="416.0" prefWidth="748.0" styleClass="hbox">
+                           <stylesheets>
+                              <URL value="@../styles/style.css" />
+                              <URL value="@../styles/style.css" />
+                           </stylesheets></VBox>
+                        </content>
+                    </ScrollPane>
+                    <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="742.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/search.png" />
+                        </image>
+                    </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pnlOrdenes" prefHeight="720.0" prefWidth="825.0" />
+            <Pane fx:id="pnlClientes" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlPaquetes" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlConfiguracion" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

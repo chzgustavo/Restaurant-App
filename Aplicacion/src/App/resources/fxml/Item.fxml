@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="720.0" spacing="78.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.java.controller.ControllerItem">
+   <children>
+      <ImageView fitHeight="55.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/antena.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nombreCompania" text="RAAE" textFill="#b7c3d7" />
+      <Label fx:id="nombreAirport" text="JFK" textFill="#b7c3d7" />
+      <Label fx:id="fecha" text="20/11/2020" textFill="#b7c3d7" />
+      <Label fx:id="costo" text="\$200" textFill="#b7c3d7" />
+      <JFXButton focusTraversable="false" prefHeight="16.0" prefWidth="61.0" style="-fx-background-color: transparent; -fx-border-color: #2a73ff; -fx-border-radius: 20;" text="Activa" textFill="#e7e5e5" />
+   </children>
+</HBox>
