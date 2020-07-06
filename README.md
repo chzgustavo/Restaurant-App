@@ -4,6 +4,7 @@ La idea surge a partir del video de youtube: [Enlace del video](https://www.yout
 Esta aplicación puede ser conectada a una base de datos en donde obtendrá todos los datos que los cliente han reservado.
 
 ## Interface principal
+Interfaz principal de la aplicacion Restaurant-App
 ![Interface Principal](https://github.com/chzgustavo/Restaurant-App/blob/master/Aplicacion/src/App/resources/images/InterfacePrincipal.png)
 
 ## Herramientas utilizadas
