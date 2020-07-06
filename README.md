@@ -1,6 +1,6 @@
 # Restaurant-App
 Este repositorio contiene la estructura de una aplicación, que puede ser utilizada para guardar pedidos realizados en un Restaurant.
-La idea surge a partir del video de youtube: [Enlace del video](https://www.youtube.com/watch?v=8lR9scOLE7U) del canal **KeepToo**.
+La idea surge a partir del video de youtube: [Enlace del video](https://www.youtube.com/watch?v=8lR9scOLE7U) del canal de youtube **KeepToo**.
 Esta aplicación puede ser conectada a una base de datos en donde obtendrá todos los datos que los cliente han reservado.
 
 ## Vista de Interface principal
