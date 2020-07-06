@@ -3,8 +3,9 @@ Este repositorio contiene la estructura de una aplicación, que puede ser utiliz
 La idea surge a partir del video de youtube: [Enlace del video](https://www.youtube.com/watch?v=8lR9scOLE7U) del canal **KeepToo**.
 Esta aplicación puede ser conectada a una base de datos en donde obtendrá todos los datos que los cliente han reservado.
 
-## Interface principal
+## Vista de Interface principal
 Interfaz principal de la aplicacion Restaurant-App
+
 ![Interface Principal](https://github.com/chzgustavo/Restaurant-App/blob/master/Aplicacion/src/App/resources/images/InterfacePrincipal.png)
 
 ## Herramientas utilizadas
