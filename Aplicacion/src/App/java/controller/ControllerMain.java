@@ -1,6 +1,7 @@
 package App.java.controller;
 
 import com.jfoenix.controls.JFXButton;
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,7 +17,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ControllerMain extends ControllerItem implements Initializable {
+public class ControllerMain extends Controller implements Initializable {
+
 
 	public static final String ITEM = "/App/resources/fxml/Item.fxml";
 	
@@ -42,8 +44,21 @@ public class ControllerMain extends ControllerItem implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
-        Node [] nodes = new Node[5];
+        Node [] nodes = new Node[10];
         for (int i = 0; i < nodes.length ; i++) {
+        	 if(i == 0) {
+                 getModelo().setNombreCompania("Apple  Inc.");
+                 getModelo().setNombreAirport("Ezeiza, Argentina");
+                 getModelo().setCosto("$1500");
+                 getModelo().setFecha("25-12-2020");
+
+             } else {
+                 getModelo().setNombreCompania("Microsoft");
+                 getModelo().setNombreAirport("Changi, Singapur");
+                 getModelo().setCosto("$150");
+                 getModelo().setFecha("20-12-2020");
+
+             }
             try {
                 final int j = i;
                 nodes[i] = FXMLLoader.load(getClass().getResource(ControllerMain.ITEM));
@@ -55,8 +70,9 @@ public class ControllerMain extends ControllerItem implements Initializable {
                 nodes[i].setOnMouseExited(event -> {
                     nodes[j].setStyle("-fx-background-color: #02030A");
                 });
-                               
+                          
                 pnItems.getChildren().add(nodes[i]);
+               
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -93,5 +109,4 @@ public class ControllerMain extends ControllerItem implements Initializable {
             pnlConfiguracion.toFront();
         }
     }
-
 }

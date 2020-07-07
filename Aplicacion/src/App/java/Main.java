@@ -1,5 +1,7 @@
 package App.java;
 
+import App.java.controller.Controller;
+import App.java.model.Model;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,8 +14,15 @@ public class Main extends Application {
 	public static final String VISTA_PRINCIPAL = "/App/resources/fxml/vistaPrincipal.fxml";
     private double x,y;
     
+    private Model modelo;
+    private Controller controlador;
+    
     @Override
     public void start(Stage primaryStage) throws Exception{
+    	modelo= new Model();
+    	controlador = new Controller();
+        controlador.setModelo(modelo);
+    	
         Parent root = FXMLLoader.load(getClass().getResource(Main.VISTA_PRINCIPAL));
         primaryStage.setScene(new Scene(root));
 
